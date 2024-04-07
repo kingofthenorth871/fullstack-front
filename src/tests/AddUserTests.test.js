@@ -37,7 +37,7 @@ describe('AddUser component', () => {
     renderWithRouter(<AddUser />);
     fireEvent.change(screen.getByLabelText('Name'), { target: { value: 'John Doe' } });
     fireEvent.change(screen.getByLabelText('Address'), { target: { value: '123 Street' } });
-    fireEvent.change(screen.getByLabelText('Country Code'), { target: { value: '47' } }); // Corrected label text
+    fireEvent.change(screen.getByLabelText('Country Code'), { target: { value: '47' } }); 
     fireEvent.change(screen.getByLabelText('Phone Number'), { target: { value: '1234567890' } });
     fireEvent.change(screen.getByLabelText('Birthdate'), { target: { value: '2000-01-01' } });
   
