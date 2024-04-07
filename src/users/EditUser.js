@@ -97,6 +97,7 @@ export default function EditUser() {
                 value={user.countrycode}
                 maxLength={3}
                 onChange={onInputChange}
+                pattern="[0-9]*"
                 required 
               />
             </div>
@@ -113,6 +114,7 @@ export default function EditUser() {
                 value={user.phonenumber}
                 maxLength={9}
                 onChange={onInputChange}
+                pattern="[0-9]*"
                 required 
               />
             </div>
