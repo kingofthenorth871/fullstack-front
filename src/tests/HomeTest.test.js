@@ -67,5 +67,4 @@ describe('Home component', () => {
     });
   });
 
-  // Add more test cases as needed
 });

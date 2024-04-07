@@ -70,22 +70,22 @@ export default function AddUser() {
               />
             </div>
             <div className="mb-3">
-  <label htmlFor="countrycode" className="form-label">
-    Country Code
-  </label>
-  <input
-    type="text"
-    className="form-control"
-    placeholder="Enter your country code"
-    name="countrycode"
-    id="countrycode"  
-    value={countrycode}
-    defaultValue="47"
-    onChange={(e) => onInputChange(e)}
-    pattern="[0-9]*"
-    required
-  />
-</div>
+            <label htmlFor="countrycode" className="form-label">
+              Country Code
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Enter your country code"
+              name="countrycode"
+              id="countrycode"  
+              value={countrycode}
+              defaultValue="47"
+              onChange={(e) => onInputChange(e)}
+              pattern="[0-9]*"
+              required
+            />
+            </div>
             <div className="mb-3">
               <label htmlFor="phonenumber" className="form-label">
                 Phone Number

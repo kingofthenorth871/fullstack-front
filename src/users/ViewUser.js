@@ -7,8 +7,10 @@ import { LeapYearChecker} from '../utils/leapYearCalculation';
 export default function ViewUser() {
   const [user, setUser] = useState({
     name: "",
-    username: "",
-    email: "",
+    address: "",
+    countrycode: "47",
+    phonenumber: "",
+    birthdate: "",
   });
 
   const { id } = useParams();

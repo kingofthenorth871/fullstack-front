@@ -6,7 +6,6 @@ export default function EditUser() {
   const navigate = useNavigate();
   const { id } = useParams();
 
-  // State to store user data
   const [user, setUser] = useState({
     name: "",
     address: "",
@@ -15,12 +14,10 @@ export default function EditUser() {
     birthdate: "",
   });
 
-  // Load user data from the server
   useEffect(() => {
     loadUser();
   }, []);
 
-  // Function to load user data
   const loadUser = async () => {
     try {
       const response = await axios.get(`http://localhost:8080/user/${id}`);
@@ -30,13 +27,11 @@ export default function EditUser() {
     }
   };
 
-  // Function to handle input changes
   const onInputChange = (e) => {
     const { name, value } = e.target;
     setUser({ ...user, [name]: value });
   };
 
-  // Function to handle form submission
   const onSubmit = async (e) => {
     e.preventDefault();
     // Check if any input field is blank

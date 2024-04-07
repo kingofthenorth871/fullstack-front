@@ -22,7 +22,7 @@ jest.mock('react-router-dom', () => ({
 
 describe('ViewUser component', () => {
   beforeEach(() => {
-    useParams.mockReturnValue({ id: '1' }); // Mock useParams to return a user id
+    useParams.mockReturnValue({ id: '1' }); 
     axios.get.mockResolvedValueOnce({
       data: {
         id: '1',
@@ -36,7 +36,7 @@ describe('ViewUser component', () => {
   });
 
   afterEach(() => {
-    jest.clearAllMocks(); // Clear all mocks after each test
+    jest.clearAllMocks(); 
   });
 
   test('renders user details correctly', async () => {
@@ -51,7 +51,7 @@ describe('ViewUser component', () => {
       expect(screen.getByText('123 Street')).toBeInTheDocument();
       expect(screen.getByText(/Countrycode:/i)).toBeInTheDocument();
       expect(screen.getByText('47')).toBeInTheDocument();
-      expect(screen.getAllByText(/Phonenumber:/i)[0]).toBeInTheDocument(); // Use getAllByText to handle multiple matches
+      expect(screen.getAllByText(/Phonenumber:/i)[0]).toBeInTheDocument(); 
       expect(screen.getByText('1234567890')).toBeInTheDocument();
       expect(screen.getByText(/Birthdate:/i)).toBeInTheDocument();
       expect(screen.getByText('2000-01-01')).toBeInTheDocument();
