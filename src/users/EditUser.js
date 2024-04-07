@@ -95,6 +95,7 @@ export default function EditUser() {
                 name="countrycode"
                 id="countrycode" 
                 value={user.countrycode}
+                maxLength={3}
                 onChange={onInputChange}
                 required 
               />
@@ -110,6 +111,7 @@ export default function EditUser() {
                 name="phonenumber"
                 id="phonenumber" 
                 value={user.phonenumber}
+                maxLength={9}
                 onChange={onInputChange}
                 required 
               />

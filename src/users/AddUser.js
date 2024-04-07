@@ -83,6 +83,7 @@ export default function AddUser() {
               defaultValue="47"
               onChange={(e) => onInputChange(e)}
               pattern="[0-9]*"
+              maxLength={3} // Add maxLength attribute
               required
             />
             </div>
@@ -99,6 +100,7 @@ export default function AddUser() {
                 value={phonenumber}
                 onChange={(e) => onInputChange(e)}
                 pattern="[0-9]*"
+                maxLength={9} // Add maxLength attribute
                 required  
               />
             </div>
